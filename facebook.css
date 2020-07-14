@@ -47,9 +47,12 @@ body {
   height:180px;
   background-color: white;
   box-shadow: 1px 1px 5px lightgray;
-  
-  
 }
+.videoTalkProfileIMG{
+  background-color:skyblue;
+  border-radius:50%;
+}
+
 .feed-item {
   display:flex;
   flex-direction:column;
@@ -61,8 +64,8 @@ body {
   display:flex;
   flex-direction:row;
   background-color: lightgrey;
-  
 }
+
 .feedProfile{
   background-color: grey;
   border-radius: 50%;
@@ -93,21 +96,22 @@ body {
 }
 .feedLikebutton{
   background-color: lightslategrey;
-  
 }
 .feedCommentbutton{
   background-color: lightslategrey;
-  
+}
+.feedCommentshow{
+  background-color: white;
+  display:none;
+}
+.feedCommentcontent{
+  background-color: rgb(240, 242, 245);
 }
 .feedSharebutton{
   background-color: lightslategrey;
   
 }
 
-.videoTalkProfileIMG{
-  background-color:skyblue;
-  border-radius:50%;
-}
 
 
 #header {
@@ -211,14 +215,11 @@ body {
   background-color: yellow;
 }
 
-
 #videoTalk {
   display: flex;
   flex-direction: column;
   background-color: white;
   box-shadow: 1px 1px 5px lightgray;
-  
-  
 }
 
 #videoTalkTitle{
