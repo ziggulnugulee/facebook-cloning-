@@ -1,0 +1,234 @@
+/* .float-frame {
+    background: lightgray;
+    border: 1px solid grey; 
+    /* padding 
+.float-unit{
+    width: 50px;
+    background: lightcoral;
+    float: left;
+   
+    
+} */
+
+hr{
+  width:30px; border-bottom:1px solid black;
+}
+
+div{
+    border-radius:8px;
+    margin:10px;
+}
+
+button{
+  border-radius:8px;
+  border-style:none;
+  margin:10px;
+}
+body {
+  min-height: 100vh;
+  background-color: rgb(240, 242, 245);
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+.box-container-main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: :center; */
+  justify-content: space-between;
+  margin-top:100px;
+
+}
+.story-item {
+  width:100px;
+  height:180px;
+  background-color: white;
+  box-shadow: 1px 1px 5px lightgray;
+  
+  
+}
+.feed-item {
+  display:flex;
+  flex-direction:column;
+  background-color:white;
+  box-shadow: 1px 1px 5px lightgray
+}
+
+.feedHeader{
+  display:flex;
+  flex-direction:row;
+  background-color: lightgrey;
+  
+}
+.feedProfile{
+  background-color: grey;
+  border-radius: 50%;
+  width:40px;
+  height:40px;
+}
+.feedTitle{
+  display:flex;
+  flex-direction:column;
+  
+}
+.feedContent{
+  background-color: white;
+  
+}
+.feedContentphoto{
+  border-style: 1px solid black;
+  
+}
+.feedLike{
+  background-color: lightsalmon;
+  
+}
+.feedButtons{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.feedLikebutton{
+  background-color: lightslategrey;
+  
+}
+.feedCommentbutton{
+  background-color: lightslategrey;
+  
+}
+.feedSharebutton{
+  background-color: lightslategrey;
+  
+}
+
+.videoTalkProfileIMG{
+  background-color:skyblue;
+  border-radius:50%;
+}
+
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow:0px 2px 5px lightgray;
+  position:fixed;
+  top:0;
+  margin:0px;
+  border-radius:0px;
+  min-height:70px;
+  width:100%;
+}
+
+#headerLeft{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#headerLogoimg{
+  background-color: skyblue;
+}
+#headerSearchimg{
+  background-color: skyblue;
+}
+#headerCenter{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.headerCentericons{
+  background-color: skyblue;
+}
+
+
+#headerRight{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#headerRighticons{
+  background-color: skyblue;
+}
+
+#storyContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#feedContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#myPosting {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 1px 1px 5px lightgray;
+  
+}
+
+#writePosting {
+    display:flex;
+    flex-direction: row;
+    background-color: lightgray;
+    
+  }
+#postingProfile{
+    border-radius: 50%;;
+    background-color:skyblue;
+    
+}
+#postingInput{
+    background-color: white;
+    
+}
+
+#postingButtons {
+  flex-direction:row;
+  background-color: lightgray;
+  
+}
+
+#postingLivecast{
+  background-color: lightcoral;
+}
+
+#postingPhoto{
+  background-color: lightgreen;
+}
+
+#postingMood{
+  background-color: yellow;
+}
+
+
+#videoTalk {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 1px 1px 5px lightgray;
+  
+  
+}
+
+#videoTalkTitle{
+  background-color: lightgray;
+  
+}
+
+#videoTalkProfiles{
+    display:flex;
+    flex-direction:row;
+    background-color: lightgray;
+   
+  }

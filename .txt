@@ -1,0 +1,28 @@
+flex-inline 으로 3단 
+중간 container 에 flex conatiner? or item 정렬 
+sticky-footer 에 flex-inline으로 로고,검색창, 버튼 컨테이너 생성 
+
+?
+item 에서 flex-direction: column 적용이 안돼요!
+flex-container 에 flex-direction 을 적용할 수 있는거임? 
+어디에선 된다고 하고 어디에선 안된다고 하고....
+
+컨테이너 안의 컨테이너들이 있는데
+가장 상위 컨테이너에 justify-content를 적용할 수 없는건가?
+(없는듯)
+
+js array 
+
+js object syntax.
+
+object={
+    "id":"yejin"
+    "pw":"hi"
+}
+
+object.number=1
+object["number"]=1
+
+-> make new variable 'count' in window using this syntax 
+
+ul, li 
