@@ -22,6 +22,7 @@ div{
 button{
   border-radius:8px;
   border-style:none;
+  background-color: white;
   margin:10px;
 }
 body {
@@ -42,6 +43,11 @@ body {
   margin-top:100px;
 
 }
+
+#logoImg{
+  width:40px;
+  height:40px;
+}
 .story-item {
   width:100px;
   height:180px;
@@ -51,6 +57,9 @@ body {
 .videoTalkProfileIMG{
   background-color:skyblue;
   border-radius:50%;
+  width:40px;
+  height:40px;
+
 }
 
 .feed-item {
@@ -63,7 +72,9 @@ body {
 .feedHeader{
   display:flex;
   flex-direction:row;
-  background-color: lightgrey;
+  align-items:center;
+  margin:0px 0px 12px 0px;
+  padding:12px 16px 0px 16px;
 }
 
 .feedProfile{
@@ -79,75 +90,135 @@ body {
 }
 .feedContent{
   background-color: white;
-  
+  margin:0px;
+  padding:4px 16px 16px 16px;
 }
 .feedContentphoto{
   border-style: 1px solid black;
   
 }
 .feedLike{
-  background-color: lightsalmon;
-  
+  display:flex;
+  margin:0px 16px 0px 16px;
+  padding:10px 0px 10px 0px;
+  align-items:center;
+
+}
+.feedLikeimg{
+  width:18px;
+  height:18px;
+  display:none;
+}
+.feedLikecounts{
+  padding:0px 0px 0px 8px;
 }
 .feedButtons{
   display:flex;
   flex-direction:row;
   justify-content: space-between;
+  margin:0px 16px 0px 16px;
+  padding:4px 0px 4px 0px;
 }
 .feedLikebutton{
-  background-color: lightslategrey;
+  background-color: white;
+  margin:0px;
+  height:32px;
+  font-size:15px;
 }
 .feedCommentbutton{
-  background-color: lightslategrey;
+  background-color: white;
+  margin:0px;
+  height:32px;
+  font-size:15px;
+}
+.feedSharebutton{
+  background-color: white;
+  margin:0px;
+  height:32px;
+  font-size:15px;
 }
 .feedCommentshow{
   background-color: white;
   display:none;
 }
-.feedCommentcontent{
-  background-color: rgb(240, 242, 245);
+.feedCommentprofile{
+  width:32px;
+  height:32px;
+  background-color: lightgray;
+  border-style: solid gray;
+  border-radius:50%;
 }
-.feedSharebutton{
-  background-color: lightslategrey;
+.feedCommentcontent{
+  width:390px;
+  border-style:none;
+  border-radius:30px; 
+  background-color: rgb(240, 242, 245);
   
 }
-
-
+.postingButton{
+  display:flex;
+  align-items:center;
+  margin:0;
+  padding:8px;
+}
+.postingbutton-img{
+  width:24px;
+  height:24px;
+}
 
 #header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   background-color: white;
   box-shadow:0px 2px 5px lightgray;
   position:fixed;
   top:0;
+  right:0;
+  left:0;
   margin:0px;
   border-radius:0px;
-  min-height:70px;
-  width:100%;
+  min-height:60px;
 }
 
 #headerLeft{
   display:flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
+  margin:0px;
 }
 
 #headerLogoimg{
-  background-color: skyblue;
+  margin:0px 0px 0px 16px;
 }
+
 #headerSearchimg{
-  background-color: skyblue;
+  border-style:none;
+  border-radius:30px;
+  background-color:rgb(240, 242, 245);
+  height:40px;
+  margin:0px 0px 0px 8px;
+  padding:4px 16px 4px 16px;
 }
 #headerCenter{
   display:flex;
   flex-direction: row;
   justify-content: center;
+  align-items:center;
+  margin:0px;
+
 }
 
-.headerCentericons{
-  background-color: skyblue;
+#headerCentericons{
+  display:flex;
+  align-items:center;
+}
+.header-center-icon{
+  width:50px;
+  height:50px;
+  margin:0px 0px 0px 8px;
 }
 
 
@@ -155,11 +226,21 @@ body {
   display:flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
+  margin:0px;
 }
 
 #headerRighticons{
-  background-color: skyblue;
+ display:flex;
+ align-items:center;
 }
+
+.header-right-icon{
+  width:45px;
+  height:45spx;
+  margin:0px;
+}
+
 
 #storyContainer {
   display: flex;
@@ -184,35 +265,45 @@ body {
 #writePosting {
     display:flex;
     flex-direction: row;
-    background-color: lightgray;
+    background-color: white;
     
   }
 #postingProfile{
+    width:40px;
+    height:40px;
     border-radius: 50%;;
     background-color:skyblue;
     
 }
 #postingInput{
-    background-color: white;
+    width:50%;
+    background-color: rgb(240, 242, 245);
+    border-style:none;
+    border-radius:30px;
+    padding:0px 12px 0px 12px;
     
 }
 
 #postingButtons {
+  display:flex;
   flex-direction:row;
-  background-color: lightgray;
-  
+  align-items:center;
 }
 
 #postingLivecast{
-  background-color: lightcoral;
+  display:flex;
+  font-size:15px;
+
 }
 
 #postingPhoto{
-  background-color: lightgreen;
+  display:flex;
+  font-size:15px;
 }
 
 #postingMood{
-  background-color: yellow;
+  display:flex;
+  font-size:15px;
 }
 
 #videoTalk {
@@ -223,13 +314,22 @@ body {
 }
 
 #videoTalkTitle{
-  background-color: lightgray;
-  
+  display:flex;
+  align-items:center;
+  margin:0px;
+  padding:12px 16px 0px 16px;
+}
+
+#videoTalkimg{
+  width:24px;
+  height:24px;
+  padding:4px;
 }
 
 #videoTalkProfiles{
     display:flex;
     flex-direction:row;
-    background-color: lightgray;
+    margin:0px;
+    padding:0px 16px 12px 16px;
    
   }

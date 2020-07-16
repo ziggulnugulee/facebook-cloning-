@@ -25,4 +25,23 @@ object["number"]=1
 
 -> make new variable 'count' in window using this syntax 
 
-ul, li 
+ul, li
+시맨틱 태그 달기
+box-sizing: border-box
+-마진 크기를 포함해서 
+* 전체에 css먹이는 셀렉터
+변수 네이밍: nav-search-input
+align-itmes
+
+user-agent-stylesheet
+브라우저에서 직접 적용되는 속성
+reset-css.:따로 css파일을 만들어준다. 
+
+css에서 
+:last child { }
+
+* 버튼들 마우스 오버 했을 때 효과 
+* 헤더 정리하기 
+* 피드 본문 헤더 정리하기 
+* 사이드 파트 더하기 
+* 피드 본문에서 좋아요-댓글달기-공유하기 부분 위에 선긋기 

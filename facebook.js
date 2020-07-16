@@ -16,44 +16,34 @@
 let liveCast=document.getElementById("postingLivecast")
 
 liveCast.addEventListener('click',function(live){
-    alert("라이브 방송을 해봅시다!");s
+    alert("라이브 방송을 해봅시다!");
 })
 
 
 //좋아요 구현을 해보자 
-let likecounts=document.getElementsByClassName("feedLike")
+feedCount=document.getElementsByClassName('feed-item')
+likecounts=document.getElementsByClassName("feedLikecounts")
 console.log(likecounts)
 // console.log(likeButton) feedLikebutton은 잘가져왔다. 
 
-let likeButton=document.getElementsByClassName("feedLikebutton")
+likeButton=document.getElementsByClassName("feedLikebutton")
 console.log(likeButton)
+likeimg=document.getElementsByClassName('feedLikeimg')
 
 //반복문
-for(k=0;k<likecounts.length;k++){
+
+for(let k=0; k<feedCount.length; k++){
+    window['likeOf'+String(k+1)]=0
+}
+
+for(let k=0;k<feedCount.length;k++){
     console.log(k)
     likeButton[k].addEventListener('click',function(){
     window['likeOf'+String(k+1)]++
     console.log(window['likeOf'+String(k+1)])
-    likecounts[k].innerHTML="좋아요"+String(window['likeOf'+String(k+1)])}
-)
-}
-
-//위 반복문이 제대로 안돌아교으웅ㅇ으우요으우요
-
-//아래는 되는데 왜 위에 반복문이 안되냐!!!! k도 잘 굴러가는데!!! 왜 어째서.....
-likeButton[0].addEventListener('click',function(){
-    window['likeOf'+String(1)]++
-    console.log(window['likeOf'+String(1)])
-    likecounts[0].innerHTML="좋아요"+String(window["likeOf"+String(1)])
-})
-
-likeButton[1].addEventListener('click',function(){
-    window['likeOf'+String(2)]++
-    console.log(window['likeOf'+String(2)])
-    likecounts[1].innerHTML="좋아요"+String(window["likeOf"+String(2)])
-})
-
-
+    likecounts[k].innerHTML=String(window['likeOf'+String(k+1)]) 
+    likeimg[k].style['display']='block'}
+)}
 
 //댓글 버튼 눌러서 input 창 띄우기 
  
@@ -66,26 +56,12 @@ console.log(feedCount)
 
 
 //반복문 
-for(m=0; m<feedCount; m++){
+for(let m=0; m<feedCount; m++){
 commentClick[m].addEventListener('click',function makecomments(){
     // console.log('댓글 찍혔다')
     // alert("댓글달기")
     prompt('댓글을 써봐요','댓글댓글')
-    commentInput[m].style['display']='block'
+    commentInput[m].style['display']='flex'
 })
 }
-
-//아 이것도 밑에는 되는데 반복이 안된다.... 좋아요랑 같은 이유로 안되는듯
-
-commentClick[0].addEventListener('click',function makecomments(){
-    prompt('댓글을 써봐요','댓글댓글')
-    commentInput[0].style['display']='block'
-})
-
-commentClick[1].addEventListener('click',function makecomments(){
-    prompt('댓글을 써봐요','댓글댓글')
-    commentInput[1].style['display']='block'
-})
-
-
 
