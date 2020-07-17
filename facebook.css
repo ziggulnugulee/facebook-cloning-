@@ -32,7 +32,7 @@ body {
 
 .box-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   
 }
 .box-container-main {
@@ -41,6 +41,7 @@ body {
   /* justify-content: :center; */
   justify-content: space-between;
   margin-top:100px;
+  padding:0px 32px 0px 32px;
 
 }
 
@@ -86,7 +87,15 @@ body {
 .feedTitle{
   display:flex;
   flex-direction:column;
-  
+}
+
+.feedTitlename{
+  margin:0px;
+  font-weight:bold;
+}
+.feedTitletime{
+  margin:0px;
+  font-size:13px;
 }
 .feedContent{
   background-color: white;
@@ -120,22 +129,28 @@ body {
   padding:4px 0px 4px 0px;
 }
 .feedLikebutton{
+  display:flex;
   background-color: white;
   margin:0px;
   height:32px;
   font-size:15px;
+  font-weight:bold;
 }
 .feedCommentbutton{
+  display:flex;
   background-color: white;
   margin:0px;
   height:32px;
   font-size:15px;
+  font-weight:bold;
 }
 .feedSharebutton{
+  display:flex;
   background-color: white;
   margin:0px;
   height:32px;
   font-size:15px;
+  font-weight:bold;
 }
 .feedCommentshow{
   background-color: white;
@@ -150,6 +165,7 @@ body {
 }
 .feedCommentcontent{
   width:390px;
+  height:36px;
   border-style:none;
   border-radius:30px; 
   background-color: rgb(240, 242, 245);
@@ -233,6 +249,7 @@ body {
 #headerRighticons{
  display:flex;
  align-items:center;
+ margin:0px;
 }
 
 .header-right-icon{
@@ -241,6 +258,33 @@ body {
   margin:0px;
 }
 
+#box-container-left{
+  display:flex;
+  flex-direction: column;
+  width:25%;
+  margin-top:100px;
+  background-color: rgb(240, 242, 245);
+}
+
+.left-items{
+
+}
+.side-sec-txt{
+  font-size: 17px;
+  font-weight: 600;
+  color: #65676B;
+}
+
+#box-container-right{
+  display:flex;
+  flex-direction: column;
+  width:25%;
+  margin-top:100px;
+  background-color: rgb(240, 242, 245);
+}
+.right-items{
+
+}
 
 #storyContainer {
   display: flex;
@@ -293,17 +337,20 @@ body {
 #postingLivecast{
   display:flex;
   font-size:15px;
+  font-weight:bold;
 
 }
 
 #postingPhoto{
   display:flex;
   font-size:15px;
+  font-weight:bold;
 }
 
 #postingMood{
   display:flex;
   font-size:15px;
+  font-weight:bold;
 }
 
 #videoTalk {

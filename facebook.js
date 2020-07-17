@@ -62,6 +62,7 @@ commentClick[m].addEventListener('click',function makecomments(){
     // alert("댓글달기")
     prompt('댓글을 써봐요','댓글댓글')
     commentInput[m].style['display']='flex'
+    commentInput[m].style['align-items']='center'
 })
 }
 
